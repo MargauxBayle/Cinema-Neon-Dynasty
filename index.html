@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta
       name="description"
       content="Page d'accueil du site internet pour le Cinéma Neon Dynasty, spécialisé dans le cyberpunk néon futuriste avec une forte influence Japonaise."
     />
     <title>Accueil - Cinéma Neon Dynasty</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <script type="module" src="style.js"></script>
   </head>
   <body>
     <header>
@@ -19,7 +21,14 @@
             src="img/logo.png"
             alt="Voici le logo du cinéma."
         /></a>
+        <!--  burger menu for mobile & tablet -->
+        <!--   <div class="burgerMenu" onclick="toggleMenu()">
+          <div class="burgerMenu--line"></div>
+          <div class="burgerMenu--line"></div>
+          <div class="burgerMenu--line"></div>
+        </div> -->
 
+        <!--  menu deskop -->
         <div>
           <ul class="navbar--list">
             <li>
@@ -36,6 +45,28 @@
           </ul>
         </div>
       </nav>
+      <!--  <div class="mobileMenu" id="mobileNav">
+        <ul class="navbar--list">
+          <li>
+            <a class="navbar--link" href="horaires.html" onclick="toggleMenu()"
+              >Horaires - Films à l'affiche</a
+            >
+          </li>
+          <li>
+            <a class="navbar--link" href="lecinema.html" onclick="toggleMenu()"
+              >Le cinéma</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar--link"
+              href="infospratiques.html"
+              onclick="toggleMenu()"
+              >Infos pratiques</a
+            >
+          </li>
+        </ul>
+      </div> -->
       <img
         class="header--banner"
         src="img/theater_banner.webp"
@@ -43,10 +74,15 @@
       />
     </header>
     <main>
-      <section id="hero">
-        <h1>Cinema <span class="h1--highlight">Neon</span> Dynasty</h1>
-
-        <h2 class="semi-bold">A l'affiche</h2>
+      <section class="hero">
+        <div>
+          <h1 class="hero--title">
+            Cinema <span class="hero--title__highlight">Neon</span> Dynasty
+          </h1>
+        </div>
+        <div>
+          <h2 class="semi-bold">A l'affiche</h2>
+        </div>
 
         <div class="featuredMovies">
           <div class="featuredMovies--card">
@@ -57,8 +93,10 @@
                 alt="Voici l'affiche du film d'animation Akira."
               />
             </div>
-            <div class="featuredMovies--card__title">
-              <h3>Akira</h3>
+            <div>
+              <a class="featuredMovies--card__title" href="horaires.html"
+                >Akira</a
+              >
             </div>
           </div>
           <div class="featuredMovies--card">
@@ -69,8 +107,10 @@
                 alt="Voici l'affiche de la série Netflix Altered Carbon."
               />
             </div>
-            <div class="featuredMovies--card__title">
-              <h3>Altered carbon</h3>
+            <div>
+              <a class="featuredMovies--card__title" href="horaires.html"
+                >Altered carbon</a
+              >
             </div>
           </div>
           <div class="featuredMovies--card">
@@ -81,7 +121,11 @@
                 alt="Voici l'affiche du film Blade Runner sorti en 1982."
               />
             </div>
-            <div class="featuredMovies--card__title"><h3>Blade runner</h3></div>
+            <div>
+              <a class="featuredMovies--card__title" href="horaires.html"
+                >Blade runner</a
+              >
+            </div>
           </div>
           <div class="featuredMovies--card">
             <div>
@@ -91,8 +135,10 @@
                 alt="Voici l'affiche du film Blade Runner 2049."
               />
             </div>
-            <div class="featuredMovies--card__title">
-              <h3>Blade runner 2049</h3>
+            <div>
+              <a class="featuredMovies--card__title" href="horaires.html"
+                >Blade runner 2049</a
+              >
             </div>
           </div>
           <div class="featuredMovies--card">
@@ -103,17 +149,24 @@
                 alt="Voici l'affiche du film d'animation Ghost in the Shell."
               />
             </div>
-            <div class="featuredMovies--card__title">
-              <h3>Ghost in the shell</h3>
+            <div>
+              <a class="featuredMovies--card__title" href="horaires.html"
+                >Ghost in the shell</a
+              >
             </div>
           </div>
         </div>
+        <a class="hero--btn semi-bold" href="horaires.html"
+          >Réservez dès maintenant !</a
+        >
       </section>
     </main>
-    <footer>
-      <a href="#">CGU</a>
-      <p>|</p>
-      <a href="#">Préférences Cookies</a>
+    <footer class="footer">
+      <div>
+        <a href="#">CGU</a>
+        <p>|</p>
+        <a href="#">Préférences Cookies</a>
+      </div>
       <br />
       <p>© 2025 - Cinema Neon Dynasty</p>
     </footer>

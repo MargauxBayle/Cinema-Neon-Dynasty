@@ -43,29 +43,35 @@
   font-style: normal;
 }
 
+$dark: #2e2a39;
+$light: #e8ffff;
+$turquoise: #83feff;
+$pink: #fd55b7;
+
 body {
   font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  color: $light;
 }
-
-h1 {
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero--title {
   font-family: "Michroma", sans-serif;
   font-size: 48px;
   text-transform: uppercase;
-  color: #83feff;
-}
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 60px;
-  }
+  color: $turquoise;
 }
 
-.h1--highlight {
-  color: #fd55b7;
+.hero--title--highlight {
+  color: $pink;
 }
 
 h2 {
   font-size: 32px;
-  color: #e8ffff;
+  color: $light;
 }
 
 .light {
@@ -99,8 +105,11 @@ nav {
 
 .navbar--link {
   text-decoration: none;
-  color: #e8ffff;
+  color: $light;
   font-family: "Michroma", sans-serif;
+}
+.navbar--link:hover {
+  color: $turquoise;
 }
 .header--banner {
   width: 100%;
@@ -114,12 +123,72 @@ nav {
     max-height: 278px;
   }
 }
+/* 
+.burgerMenu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burgerMenu--line {
+  width: 25px;
+  height: 3px;
+  background-color: #83feff;
+  margin: 3px 0;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: $dark;
+  border-top: 2px solid $turquoise;
+}
+.mobileMenu .navbar__link {
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+}
+@media (max-width: 1023px) {
+  nav {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .navbar--list {
+    display: none;
+  }
+  .burgerMenu {
+    display: flex;
+  }
+  .mobileMenu__active {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  nav {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .burgerMenu {
+    display: none;
+  }
+  .navbar--list {
+    display: flex;
+  }
+  .mobileMenu {
+    display: none;
+  }
+} */
 
 .featuredMovies {
   display: flex;
   justify-content: center;
   gap: 40px;
   padding: 50px;
+  width: 1080px;
+  margin: auto;
 }
 
 .featuredMovies--card__img {
@@ -130,4 +199,29 @@ nav {
   font-family: "Michroma", sans-serif;
   color: #e8ffff;
   text-transform: uppercase;
+  text-decoration: none;
+}
+.featuredMovies--card__title:hover {
+  color: $turquoise;
+}
+
+.hero--btn {
+  display: block;
+  margin: 0 auto;
+  color: $turquoise;
+  background-color: transparent;
+  border: 3px solid $pink;
+  padding: 9px;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.hero--btn:hover {
+  color: $pink;
+}
+
+.footer {
+  display: flex;
+  text-decoration: none;
 }
