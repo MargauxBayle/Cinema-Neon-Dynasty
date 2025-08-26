@@ -2,4 +2,81 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #2e2a39;
+}
+
+@font-face {
+  font-family: "Michroma";
+  src: url(../font/Michroma-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Robot";
+  src: url(../font/Roboto-Light.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+h1 {
+  font-family: "Michroma", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #83feff;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+.h1--highlight {
+  color: #fd55b7;
+}
+
+h2 {
+  font-size: 32px;
+  color: #e8ffff;
+}
+
+.light {
+  font-weight: 100;
+}
+.medium {
+  font-weight: 500;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
 }
