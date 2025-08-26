@@ -1,0 +1,23 @@
+{
+  "name": "cinema-neon-dynasty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargauxBayle/Cinema-Neon-Dynasty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MargauxBayle/Cinema-Neon-Dynasty/issues"
+  },
+  "homepage": "https://github.com/MargauxBayle/Cinema-Neon-Dynasty#readme",
+  "dependencies": {
+    "sass": "^1.91.0"
+  }
+}
