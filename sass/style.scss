@@ -65,7 +65,7 @@ body {
   color: $turquoise;
 }
 
-.hero--title--highlight {
+.hero--title__highlight {
   color: $pink;
 }
 
@@ -117,70 +117,6 @@ nav {
   object-fit: cover;
   display: block;
 }
-
-@media (min-width: 1024px) {
-  .header--banner {
-    max-height: 278px;
-  }
-}
-/* 
-.burgerMenu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-.burgerMenu--line {
-  width: 25px;
-  height: 3px;
-  background-color: #83feff;
-  margin: 3px 0;
-}
-
-.mobileMenu {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding: 40px 20px;
-  background-color: $dark;
-  border-top: 2px solid $turquoise;
-}
-.mobileMenu .navbar__link {
-  font-size: 20px;
-  display: block;
-  padding: 10px;
-}
-@media (max-width: 1023px) {
-  nav {
-    justify-content: space-between;
-    gap: 0;
-  }
-  .navbar--list {
-    display: none;
-  }
-  .burgerMenu {
-    display: flex;
-  }
-  .mobileMenu__active {
-    display: flex;
-  }
-}
-@media (min-width: 1024px) {
-  nav {
-    justify-content: center;
-    gap: 50px;
-  }
-
-  .burgerMenu {
-    display: none;
-  }
-  .navbar--list {
-    display: flex;
-  }
-  .mobileMenu {
-    display: none;
-  }
-} */
 
 .featuredMovies {
   display: flex;
