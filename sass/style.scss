@@ -161,3 +161,18 @@ nav {
   display: flex;
   text-decoration: none;
 }
+
+.btn__highlight {
+  color: $light;
+  background-color: transparent;
+  border: 1px solid $pink;
+  padding: 9px;
+  border-radius: 5px;
+}
+
+.btn-trier:hover {
+  color: $turquoise;
+}
+.btn-filtrer:hover {
+  color: $turquoise;
+}

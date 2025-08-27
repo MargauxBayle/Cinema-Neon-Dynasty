@@ -6,7 +6,8 @@
     "time": "19:00",
     "ticketsSold": 12,
     "description": "Dans un futur cybernétique, une policière cyborg enquête sur un mystérieux hacker appelé le Marionnettiste.",
-    "duration": 83
+    "duration": 83,
+    "image": "img/ghostintheshell_poster.webp"
   },
   {
     "movie": "AKIRA",
@@ -15,7 +16,8 @@
     "time": "21:30",
     "ticketsSold": 80,
     "description": "À Neo-Tokyo, deux amis se retrouvent au cœur d'une conspiration militaire quand l’un d’eux développe des pouvoirs psychiques dévastateurs.",
-    "duration": 124
+    "duration": 124,
+    "image": "img/akira_poster.webp"
   },
   {
     "movie": "BLADE RUNNER",
@@ -24,7 +26,8 @@
     "time": "19:00",
     "ticketsSold": 80,
     "description": "Dans un futur dystopique, un policier est chargé de traquer et éliminer des androïdes rebelles appelés réplicants.",
-    "duration": 117
+    "duration": 117,
+    "image": "img/bladerunner1982_poster.webp"
   },
   {
     "movie": "BLADE RUNNER 2049",
@@ -33,7 +36,8 @@
     "time": "22:00",
     "ticketsSold": 23,
     "description": "Des décennies après les événements du premier film, un nouveau blade runner découvre un secret qui pourrait bouleverser l’humanité.",
-    "duration": 163
+    "duration": 163,
+    "image": "img/bladerunner2049_poster.webp"
   },
   {
     "movie": "ALTERED  CARBON",
@@ -42,6 +46,7 @@
     "time": "20:30",
     "ticketsSold": 30,
     "description": "Dans un monde où la conscience peut être transférée d’un corps à l’autre, un ancien soldat enquête sur un meurtre complexe.",
-    "duration": 120
+    "duration": 120,
+    "image": "img/alteredcarbon_poster.webp"
   }
 ]
