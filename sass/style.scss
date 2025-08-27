@@ -94,6 +94,19 @@ nav {
   gap: 50px;
 }
 
+.navbar-pc {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.navbar-mobile {
+  @media screen and (min-width: 1023px) {
+    display: none;
+  }
+}
+
 .navbar--logo {
   width: 72px;
 }
@@ -113,22 +126,30 @@ nav {
 }
 .header--banner {
   width: 100%;
-  max-height: 115px;
+  max-height: 10rem;
   object-fit: cover;
   display: block;
 }
 
 .featuredMovies {
   display: flex;
-  justify-content: center;
   gap: 40px;
   padding: 50px;
-  width: 1080px;
-  margin: auto;
+  width: 75vw;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  @media screen and (min-width: 1024px) {
+    width: 100vw;
+    justify-content: center;
+  }
 }
 
+.featuredMovies--card {
+  scroll-snap-align: center;
+}
 .featuredMovies--card__img {
-  height: 400px;
+  height: 20rem;
 }
 
 .featuredMovies--card__title {
@@ -157,10 +178,33 @@ nav {
   color: $pink;
 }
 
-.footer {
-  display: flex;
-  text-decoration: none;
+/* style for the footer */
+
+.footer--banner {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  display: block;
+  margin: 20px;
 }
+
+.footer {
+  text-align: center;
+  color: $turquoise;
+}
+
+.footer--link {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+.footer--link__decoration {
+  text-decoration: none;
+  color: $turquoise;
+}
+
+/* style for the 'horaires' page :*/
 
 .btn__highlight {
   color: $light;
@@ -175,4 +219,12 @@ nav {
 }
 .btn-filtrer:hover {
   color: $turquoise;
+}
+
+.fiches {
+  margin-top: 40px;
+}
+
+.fiches img {
+  height: 20rem;
 }

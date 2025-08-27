@@ -27,8 +27,8 @@ function genererMovies(movies) {
       80 - article.ticketsSold
     }`;
 
-    sectionFiches.appendChild(movieElement);
     sectionFiches.appendChild(imageElement);
+    sectionFiches.appendChild(movieElement);
     sectionFiches.appendChild(priceElement);
     sectionFiches.appendChild(dateElement);
     sectionFiches.appendChild(durationElement);
