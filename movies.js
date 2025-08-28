@@ -63,3 +63,19 @@ boutonFiltrer.addEventListener("click", function () {
   document.querySelector(".fiches").innerHTML = "";
   genererMovies(moviesFiltres);
 });
+
+let maxBar = 80;
+let currentBar = 0;
+let progressBar;
+let intervalId;
+
+let initialisation = function () {
+  progressBar = document.getElementById("progressBar");
+  progressBar.value = currentBar;
+  progressBar.max = maxBar;
+};
+
+let displayBar = function () {
+  currentBar++;
+  progressBar.value = currentBar;
+};
