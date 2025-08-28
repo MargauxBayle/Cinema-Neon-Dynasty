@@ -10,7 +10,7 @@
     />
     <title>Accueil - Cinéma Neon Dynasty</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <script type="module" src="style.js"></script>
+
     <script type="module" src="movies.js"></script>
   </head>
   <body>
@@ -23,20 +23,32 @@
               class="navbar--logo"
               src="img/logo.png"
               alt="Voici le logo du cinéma."
+              aria-label="Logo du cinéma, qui sert à revenir à l'accueil du site."
           /></a>
           <!--  nav version pc  -->
           <div class="navbar-pc">
             <ul class="navbar--list">
               <li>
-                <a class="navbar--link" href="horaires.html"
+                <a
+                  class="navbar--link"
+                  aria-label="Lien pour la page horaire"
+                  href="horaires.html"
                   >Horaires - Films à l'affiche</a
                 >
               </li>
               <li>
-                <a class="navbar--link" href="lecinema.html">Le cinéma</a>
+                <a
+                  class="navbar--link"
+                  aria-label="Lien pour la page cinéma"
+                  href="lecinema.html"
+                  >Le cinéma</a
+                >
               </li>
               <li>
-                <a class="navbar--link" href="infospratiques.html"
+                <a
+                  class="navbar--link"
+                  aria-label="lien pour la page infos pratiques"
+                  href="infospratiques.html"
                   >Infos pratiques</a
                 >
               </li>
@@ -50,6 +62,7 @@
                   ><img
                     src="icon/time.svg"
                     alt="Icone pour la page horaire de la navbar mobile"
+                    aria-label="Icone du lien pour aller à la page horaire"
                 /></a>
               </li>
               <li>
@@ -57,6 +70,7 @@
                   ><img
                     src="icon/cinema.svg"
                     alt="Icone pour la page cinema de la navbar mobile"
+                    aria-label="icone du lien pour aller à la page cinéma"
                 /></a>
               </li>
               <li>
@@ -64,6 +78,7 @@
                   ><img
                     src="icon/info.svg"
                     alt="Icone pour la page infos pratiques de la navbar mobile"
+                    aria-label="icone du lien pour aller à la page infos pratiques "
                 /></a>
               </li>
             </ul>
@@ -74,7 +89,8 @@
         <img
           class="header--banner"
           src="img/theater_banner.webp"
-          alt="Voici la bannière du Cinéma Neon Dynasty"
+          alt="Voici la bannière du site Cinéma Neon Dynasty"
+          aria-label="bannière du site internet"
         />
       </div>
     </header>
@@ -99,10 +115,14 @@
                 class="featuredMovies--card__img"
                 src="img/akira_poster.webp"
                 alt="Voici l'affiche du film d'animation Akira."
+                aria-label="Image représentant l'affiche du film d'animation Akira"
               />
             </div>
             <div>
-              <a class="featuredMovies--card__title" href="horaires.html"
+              <a
+                class="featuredMovies--card__title"
+                href="horaires.html"
+                aria-label="lien pour accéder à la page horaire"
                 >Akira</a
               >
             </div>
@@ -113,10 +133,14 @@
                 class="featuredMovies--card__img"
                 src="img/alteredcarbon_poster.webp"
                 alt="Voici l'affiche de la série Netflix Altered Carbon."
+                aria-label="Image représentant l'affiche de la série Altered Carbon"
               />
             </div>
             <div>
-              <a class="featuredMovies--card__title" href="horaires.html"
+              <a
+                class="featuredMovies--card__title"
+                href="horaires.html"
+                aria-label="lien pour accéder à la page horaire"
                 >Altered carbon</a
               >
             </div>
@@ -127,10 +151,14 @@
                 class="featuredMovies--card__img"
                 src="img/bladerunner1982_poster.webp"
                 alt="Voici l'affiche du film Blade Runner sorti en 1982."
+                aria-label="image représentant l'affiche du film Blade Runner"
               />
             </div>
             <div>
-              <a class="featuredMovies--card__title" href="horaires.html"
+              <a
+                class="featuredMovies--card__title"
+                href="horaires.html"
+                aria-label="lien pour accéder à la page horaire"
                 >Blade runner</a
               >
             </div>
@@ -141,10 +169,14 @@
                 class="featuredMovies--card__img"
                 src="img/bladerunner2049_poster.webp"
                 alt="Voici l'affiche du film Blade Runner 2049."
+                aria-label="image représentant l'affiche du film Blade Runner 2049"
               />
             </div>
             <div>
-              <a class="featuredMovies--card__title" href="horaires.html"
+              <a
+                class="featuredMovies--card__title"
+                href="horaires.html"
+                aria-label="lien pour accéder à la page horaire"
                 >Blade runner 2049</a
               >
             </div>
@@ -155,16 +187,23 @@
                 class="featuredMovies--card__img"
                 src="img/ghostintheshell_poster.webp"
                 alt="Voici l'affiche du film d'animation Ghost in the Shell."
+                aria-label="image représentant l'affiche du film d'animation Ghost in the Shell"
               />
             </div>
             <div>
-              <a class="featuredMovies--card__title" href="horaires.html"
+              <a
+                class="featuredMovies--card__title"
+                href="horaires.html"
+                aria-label="lien pour accéder à la page horaire"
                 >Ghost in the shell</a
               >
             </div>
           </div>
         </div>
-        <a class="hero--btn semi-bold" href="horaires.html"
+        <a
+          class="hero--btn semi-bold"
+          href="horaires.html"
+          aria-label="lien pour accéder à la page horaire"
           >Réservez dès maintenant !</a
         >
       </section>
@@ -175,6 +214,17 @@
       />
     </main>
     <footer class="footer">
+      <div>
+        <a href="#"
+          ><img
+            class="footer--logo"
+            src="icon/instagram.svg"
+            alt="logo instagram"
+        /></a>
+        <a href="#"
+          ><img class="footer--logo" src="icon/facebook.svg" alt=""
+        /></a>
+      </div>
       <div class="footer--link">
         <a class="footer--link__decoration" href="#">CGU</a>
         <p>|</p>

@@ -87,6 +87,7 @@ h2 {
   font-weight: 700;
 }
 
+/* --- navbar style: ---*/
 .navbar {
   display: flex;
   align-items: center;
@@ -96,13 +97,14 @@ h2 {
 
 .navbar-pc {
   display: none;
-  @media screen and (min-width: 1024px) {
-    display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
 .navbar-mobile {
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
 }
@@ -120,6 +122,7 @@ h2 {
 }
 .navbar--list {
   display: flex;
+  gap: 3rem;
   list-style: none;
 }
 
@@ -137,6 +140,8 @@ h2 {
   object-fit: cover;
   display: block;
 }
+
+/* --- end navbar style --- */
 
 .featuredMovies {
   display: flex;
@@ -185,7 +190,7 @@ h2 {
   color: $pink;
 }
 
-/* style for the footer */
+/*--- footer style ---*/
 
 .footer--banner {
   width: 100%;
@@ -211,7 +216,14 @@ h2 {
   color: $turquoise;
 }
 
-/* style for the 'horaires' page :*/
+.footer--logo {
+  width: 32px;
+  @media screen and (min-width: 1024px) {
+    width: 48px;
+  }
+}
+
+/* 'horaires' page style:*/
 
 .btn__highlight {
   color: $light;
