@@ -9,7 +9,7 @@
     />
     <title>Horaires - Les Films à l'affiche</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/horaires.min.css" />
+
     <script type="module" src="movies.js"></script>
   </head>
   <body>
@@ -92,15 +92,20 @@
     </header>
     <main>
       <!--  sort and filter -->
-      <section class="filtres"></section>
-      <button class="btn-trier btn__highlight">Trier par prix croissant</button>
-      <br />
-      <button class="btn-filtrer btn__highlight">
-        Filtrer les films complets
-      </button>
+      <section class="filtres">
+        <button class="btn-trier btn__highlight">
+          Trier par prix croissant
+        </button>
+        <br />
+        <button class="btn-filtrer btn__highlight">
+          Filtrer les films complets
+        </button>
+      </section>
 
       <!-- movie cards  -->
-      <section class="fiches"><h1>Programmation</h1></section>
+      <section class="fiches">
+        <h1 class="fiches--title">Programmation</h1>
+      </section>
     </main>
     <footer class="footer">
       <div>

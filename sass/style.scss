@@ -58,6 +58,9 @@ h2 {
   font-size: 32px;
   color: $light;
 }
+h1 {
+  font-family: "Michroma", sans-serif;
+}
 
 .light {
   font-weight: 100;
@@ -128,6 +131,13 @@ h2 {
 
 /* --- end navbar style --- */
 
+.container {
+  width: auto;
+  margin: 1rem;
+  @media screen and (min-width: 1024px) {
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -135,6 +145,7 @@ h2 {
 }
 
 .hero-container {
+  padding: 1rem;
   @media screen and (min-width: 1024px) {
     display: flex;
     justify-content: center;
@@ -231,7 +242,6 @@ h2 {
     transform: scaleY(1);
   }
   25% {
-    opacity: 1;
     transform: scaleY(2.5);
   }
   50% {
@@ -323,8 +333,15 @@ h2 {
 
 /* 'horaires' page style:*/
 
+.filtres {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
 .btn__highlight {
   color: $light;
+  font-size: 20px;
   background-color: transparent;
   border: 1px solid $pink;
   padding: 9px;
@@ -339,9 +356,34 @@ h2 {
 }
 
 .fiches {
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
+.fiches--title {
+  font-family: "Michroma", sans-serif;
+  display: flex;
+  justify-content: center;
+}
 .fiches img {
   height: 20rem;
+  margin: 1rem;
+  @media screen and (min-width: 1024px) {
+    height: 25rem;
+  }
+}
+
+.fiches p {
+  color: $light;
+  margin-left: 1rem;
+}
+.fiches h2 {
+  font-family: "Michroma", sans-serif;
+  font-size: 18px;
+  margin-left: 1rem;
+  @media screen and (min-width: 1024px) {
+    font-size: 38px;
+  }
 }
