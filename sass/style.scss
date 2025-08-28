@@ -53,21 +53,6 @@ body {
   font-size: 20px;
   color: $light;
 }
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.hero--title {
-  font-family: "Michroma", sans-serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  color: $turquoise;
-}
-
-.hero--title__highlight {
-  color: $pink;
-}
 
 h2 {
   font-size: 32px;
@@ -142,6 +127,119 @@ h2 {
 }
 
 /* --- end navbar style --- */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-container {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.hero--title {
+  font-family: "Michroma", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: $turquoise;
+}
+
+.hero--title__highlight {
+  color: $pink;
+}
+
+/* --- equalizer style & animation --- */
+.equalizer {
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.equalizer--top,
+.equalizer--bottom {
+  display: flex;
+  gap: 1rem;
+}
+.equalizer--top__bar {
+  width: 1rem;
+  height: 2rem;
+  background: $turquoise;
+  animation: bounce 1.5s infinite ease-out;
+  transform-origin: bottom;
+}
+
+.equalizer--top__bar:nth-child(2),
+.equalizer--top__bar:nth-child(4),
+.equalizer--top__bar:nth-child(13),
+.equalizer--bottom__bar:nth-child(2),
+.equalizer--bottom__bar:nth-child(4) {
+  animation-delay: 0s;
+}
+
+.equalizer--top__bar:nth-child(1),
+.equalizer--top__bar:nth-child(3),
+.equalizer--top__bar:nth-child(5),
+.equalizer--top__bar:nth-child(14),
+.equalizer--bottom__bar:nth-child(1),
+.equalizer--bottom__bar:nth-child(3),
+.equalizer--bottom__bar:nth-child(5),
+.equalizer--bottom__bar:nth-child(14) {
+  animation-delay: 0.15s;
+}
+.equalizer--top__bar:nth-child(6),
+.equalizer--top__bar:nth-child(8),
+.equalizer--top__bar:nth-child(15),
+.equalizer--bottom__bar:nth-child(6),
+.equalizer--bottom__bar:nth-child(8),
+.equalizer--bottom__bar:nth-child(15) {
+  animation-delay: 0.3s;
+}
+.equalizer--top__bar:nth-child(9),
+.equalizer--top__bar:nth-child(11),
+.equalizer--bottom__bar:nth-child(9),
+.equalizer--bottom__bar:nth-child(11) {
+  animation-delay: 0.45s;
+}
+.equalizer--top__bar:nth-child(10),
+.equalizer--top__bar:nth-child(12),
+.equalizer--bottom__bar:nth-child(10),
+.equalizer--bottom__bar:nth-child(12) {
+  animation-delay: 0.6s;
+}
+
+.equalizer--bottom {
+  transform: rotate(180deg);
+}
+
+.equalizer--bottom__bar {
+  width: 1rem;
+  height: 2rem;
+  background: $pink;
+  animation: bounce 1s infinite ease-out;
+  transform-origin: bottom;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  25% {
+    opacity: 1;
+    transform: scaleY(2.5);
+  }
+  50% {
+    transform: scaleY(4);
+  }
+}
+
+/* --- end equalizer style & animation ---  */
 
 .featuredMovies {
   display: flex;
