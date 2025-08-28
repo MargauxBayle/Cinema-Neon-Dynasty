@@ -9,6 +9,7 @@
     />
     <title>Le Cinéma</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <script type="module" src="burger.js"></script>
   </head>
   <body>
     <header>
@@ -22,7 +23,7 @@
               alt="Voici le logo du cinéma."
               aria-label="Logo du cinéma, qui sert à revenir à l'accueil du site."
           /></a>
-          <!--  navbar pc version  -->
+          <!--  nav version pc  -->
           <div class="navbar-pc">
             <ul class="navbar--list">
               <li>
@@ -51,33 +52,16 @@
               </li>
             </ul>
           </div>
-          <!--  navbar mobile version   -->
-          <div class="navbar-mobile">
-            <ul class="navbar-mobile--list">
-              <li>
-                <a href="horaires.html"
-                  ><img
-                    src="icon/time.svg"
-                    alt="Icone pour la page horaire de la navbar mobile"
-                    aria-label="Icone du lien pour aller à la page horaire"
-                /></a>
-              </li>
-              <li>
-                <a href="lecinema.html"
-                  ><img
-                    src="icon/cinema.svg"
-                    alt="Icone pour la page cinema de la navbar mobile"
-                    aria-label="icone du lien pour aller à la page cinéma"
-                /></a>
-              </li>
-              <li>
-                <a href="infospratiques.html"
-                  ><img
-                    src="icon/info.svg"
-                    alt="Icone pour la page infos pratiques de la navbar mobile"
-                    aria-label="icone du lien pour aller à la page infos pratiques "
-                /></a>
-              </li>
+          <!--  nav version mobile  -->
+          <div id="burger-menu">
+            <span></span>
+          </div>
+
+          <div id="navbar-mobile--menu">
+            <ul>
+              <li><a href="horaires.html">Horaires - Films à l'affiche</a></li>
+              <li><a href="lecinema.html">Le cinéma</a></li>
+              <li><a href="infospratiques.html">Infos pratiques</a></li>
             </ul>
           </div>
         </div>

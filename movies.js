@@ -5,11 +5,11 @@ const movies = await reponse.json();
 function genererMovies(movies) {
   for (let i = 0; i < movies.length; i++) {
     const article = movies[i];
-    const descriptionElement = document.createElement("p");
-    descriptionElement.innerText = article.description;
+
     const sectionFiches = document.querySelector(".fiches");
     const cinemaElement = document.createElement("article");
-
+    const descriptionElement = document.createElement("p");
+    descriptionElement.innerText = article.description;
     const movieElement = document.createElement("h2");
     movieElement.innerText = article.movie;
     const imageElement = document.createElement("img");
@@ -27,6 +27,13 @@ function genererMovies(movies) {
       80 - article.ticketsSold
     }`;
 
+    const progressBar = document.createElement("progress");
+    progressBar.max = 80;
+    progressBar.value = article.ticketsSold;
+    if (progressBar.value === progressBar.max) {
+      progressBar.classList.add("complet");
+    }
+
     sectionFiches.appendChild(imageElement);
     sectionFiches.appendChild(movieElement);
     sectionFiches.appendChild(priceElement);
@@ -35,6 +42,7 @@ function genererMovies(movies) {
     sectionFiches.appendChild(timeElement);
     sectionFiches.appendChild(ticketsSoldElement);
     sectionFiches.appendChild(descriptionElement);
+    sectionFiches.appendChild(progressBar);
     sectionFiches.appendChild(cinemaElement);
   }
 }
@@ -63,19 +71,3 @@ boutonFiltrer.addEventListener("click", function () {
   document.querySelector(".fiches").innerHTML = "";
   genererMovies(moviesFiltres);
 });
-
-let maxBar = 80;
-let currentBar = 0;
-let progressBar;
-let intervalId;
-
-let initialisation = function () {
-  progressBar = document.getElementById("progressBar");
-  progressBar.value = currentBar;
-  progressBar.max = maxBar;
-};
-
-let displayBar = function () {
-  currentBar++;
-  progressBar.value = currentBar;
-};
