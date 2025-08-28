@@ -14,28 +14,59 @@
   </head>
   <body>
     <header>
+      <!--  navbar -->
       <nav>
-        <a href="index.html">
-          <img
-            class="navbar--logo"
-            src="img/logo.png"
-            alt="Voici le logo du cinéma."
-        /></a>
-
-        <div>
-          <ul class="navbar--list">
-            <li>
-              <a class="navbar--link" href="horaires.html"
-                >Horaires - Films à l'affiche</a
-              >
-            </li>
-            <li><a class="navbar--link" href="lecinema.html">Le cinéma</a></li>
-            <li>
-              <a class="navbar--link" href="infospratiques.html"
-                >Infos pratiques</a
-              >
-            </li>
-          </ul>
+        <div class="navbar">
+          <a href="index.html">
+            <img
+              class="navbar--logo"
+              src="img/logo.png"
+              alt="Voici le logo du cinéma."
+          /></a>
+          <!--  nav version pc  -->
+          <div class="navbar-pc">
+            <ul class="navbar--list">
+              <li>
+                <a class="navbar--link" href="horaires.html"
+                  >Horaires - Films à l'affiche</a
+                >
+              </li>
+              <li>
+                <a class="navbar--link" href="lecinema.html">Le cinéma</a>
+              </li>
+              <li>
+                <a class="navbar--link" href="infospratiques.html"
+                  >Infos pratiques</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--  nav version mobile  -->
+          <div class="navbar-mobile">
+            <ul class="navbar-mobile--list">
+              <li>
+                <a href="horaires.html"
+                  ><img
+                    src="icon/time.svg"
+                    alt="Icone pour la page horaire de la navbar mobile"
+                /></a>
+              </li>
+              <li>
+                <a href="lecinema.html"
+                  ><img
+                    src="icon/cinema.svg"
+                    alt="Icone pour la page cinema de la navbar mobile"
+                /></a>
+              </li>
+              <li>
+                <a href="infospratiques.html"
+                  ><img
+                    src="icon/info.svg"
+                    alt="Icone pour la page infos pratiques de la navbar mobile"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <img

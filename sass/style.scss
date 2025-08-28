@@ -60,7 +60,7 @@ body {
 }
 .hero--title {
   font-family: "Michroma", sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   text-transform: uppercase;
   color: $turquoise;
 }
@@ -87,11 +87,11 @@ h2 {
   font-weight: 700;
 }
 
-nav {
+.navbar {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 50px;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .navbar-pc {
@@ -107,12 +107,19 @@ nav {
   }
 }
 
+.navbar-mobile--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
 .navbar--logo {
   width: 72px;
 }
 .navbar--list {
   display: flex;
-  gap: 50px;
   list-style: none;
 }
 
@@ -185,7 +192,7 @@ nav {
   max-height: 20rem;
   object-fit: cover;
   display: block;
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .footer {
