@@ -352,6 +352,23 @@ h1 {
   }
 }
 
+@mixin hightlight-button {
+  display: block;
+  margin: 0 auto;
+  color: $turquoise;
+  background-color: transparent;
+  border: 3px solid $pink;
+  padding: 9px;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.music--btn {
+  @include hightlight-button();
+}
+
 /* --- end equalizer style & animation ---  */
 
 .featuredMovies {
@@ -386,16 +403,7 @@ h1 {
 }
 
 .hero--btn {
-  display: block;
-  margin: 0 auto;
-  color: $turquoise;
-  background-color: transparent;
-  border: 3px solid $pink;
-  padding: 9px;
-  border-radius: 5px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
+  @include hightlight-button();
 }
 .hero--btn:hover {
   color: $pink;

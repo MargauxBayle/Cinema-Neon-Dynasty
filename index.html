@@ -10,9 +10,8 @@
     />
     <title>Accueil - Cinéma Neon Dynasty</title>
     <link rel="stylesheet" href="css/style.min.css" />
-
-    <script type="module" src="movies.js"></script>
     <script type="module" src="burger.js"></script>
+    <script type="module" src="audio.js"></script>
   </head>
   <body>
     <header>
@@ -139,6 +138,10 @@
               <div class="equalizer--bottom__bar"></div>
               <div class="equalizer--bottom__bar"></div>
             </div>
+          </div>
+          <div class="music">
+            <button class="music--btn" id="js-music--btn">Play</button
+            ><audio id="js-loop" src="loop.mp3" loop></audio>
           </div>
         </div>
         <div>

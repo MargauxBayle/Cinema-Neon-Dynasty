@@ -27,6 +27,7 @@ function genererMovies(movies) {
       80 - article.ticketsSold
     }`;
 
+    /* progress bar : */
     const progressBar = document.createElement("progress");
     progressBar.max = 80;
     progressBar.value = article.ticketsSold;
@@ -49,7 +50,7 @@ function genererMovies(movies) {
 
 genererMovies(movies);
 
-//sort and filter
+//sort and filter :
 
 const boutonTrier = document.querySelector(".btn-trier");
 
